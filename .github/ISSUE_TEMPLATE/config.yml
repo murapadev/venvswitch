@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Ask usage/help in Discussions"
+    url: "https://github.com/murapadev/venvswitch/discussions"
+    about: "Usage questions, configuration help, and troubleshooting."
+  - name: "Report a security issue"
+    url: "https://github.com/murapadev/venvswitch/security/policy"
+    about: "Report vulnerabilities privately."
+  - name: "Open a bug report"
+    url: "https://github.com/murapadev/venvswitch/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBUG%5D+"
+    about: "Use the bug template to include environment and venvswitch diagnostics."
