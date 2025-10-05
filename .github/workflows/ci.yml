@@ -21,12 +21,13 @@ jobs:
               run: |
                   mkdir -p ~/.oh-my-zsh/custom/plugins/venvswitch
                   cp venvswitch.plugin.zsh ~/.oh-my-zsh/custom/plugins/venvswitch/
+                  echo 'export ZSH_DISABLE_COMPFIX=true' >> ~/.zshrc
                   echo 'plugins=(venvswitch)' >> ~/.zshrc
             - name: Check syntax
               run: zsh -n venvswitch.plugin.zsh
             - name: Test basic functionality
               run: |
-                  zsh -c 'source ~/.zshrc && venvswitch_config'
+                  zsh -i -c 'source ~/.zshrc && venvswitch_config'
             - name: Install shellcheck
               run: sudo apt-get install -y shellcheck
             - name: Lint with shellcheck
